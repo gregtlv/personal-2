@@ -78,7 +78,7 @@ hr {
 
 	}
 
-	.card:hover {
+	.card_service:hover {
 		animation: scaleAnimation 1s 1; 
 	}
 
