@@ -175,16 +175,20 @@ hr {
 
 /*Footer*/	
 
+	footer {
+		margin-top: 5em;
+	}
+	
 	.contacts__social__icons {
 		display: flex;
 		flex-direction: row;
-		/*justify-content: center;*/
-		text-align: left;
+		justify-content: center;
+		/*text-align: left;*/
 	}
 
 	.contacts__social__item {
-		font-size: 2em;
-		margin: 0 20px 0 0;
+		font-size: 2.3em;
+		margin: 0 20px 0 20px;
 }			
 	.contacts__social__icons a {
 		transition: all 0.5s;
@@ -195,7 +199,10 @@ hr {
 		transition: all 0.5s;
 		color: #ff6f00;
 	}
-	
+	.footer__title {
+		display: none;
+
+	}
 
 
 @media screen and (max-width: 768px) {
