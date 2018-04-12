@@ -172,29 +172,43 @@ hr {
 
 			}
 			
-			
 
-/*		.main__contacts__right h4 {
-			margin-top: 0px;
-		
-		}*/
+/*Footer*/	
 
+	.contacts__social__icons {
+		display: flex;
+		flex-direction: row;
+		/*justify-content: center;*/
+		text-align: left;
+	}
 
+	.contacts__social__item {
+		font-size: 2em;
+		margin: 0 20px 0 0;
+}			
+	.contacts__social__icons a {
+		transition: all 0.5s;
+		color: inherit;
+	}
 
-
-
-
-
-
-/*.container {
-	width: 75%;
-}*/
-
-
+	.contacts__social__item:hover {
+		transition: all 0.5s;
+		color: #ff6f00;
+	}
+	
 
 
 @media screen and (max-width: 768px) {
 	
+	
+	.contacts__social__icons {
+		justify-content: center;
+
+	}
+	.footer__title {
+		display: none;
+		text-align: center;
+	}
 	.main__contacts__content {
 		flex-direction: column;
 		align-items: center;
@@ -247,8 +261,7 @@ hr {
 	}
 
 	header h4 {
-		text-align: center;
-		
+		text-align: center;		
 		color: #555555;
 	}
 }
