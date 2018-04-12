@@ -12,9 +12,6 @@ hr {
 
   margin-bottom: 50px;
 }
-.container {
-	width: 75%;
-}
 
 /*Navigation*/
 
@@ -29,7 +26,7 @@ hr {
 
 		.header__nav__item {
 			margin: 0 1em 0 1em;
-			text-decoration-color: #ee6e73;
+			text-decoration-color: #6d4c41;
 			
 		}
 
@@ -37,6 +34,7 @@ hr {
 			transition: all 0.5s;
 			opacity: 1;
 			text-decoration: underline;
+			text-decoration-color: #ff6f00;
 		}
 
 
@@ -51,35 +49,158 @@ hr {
 		}
 
 
+
+/*Services */
 	.main__services {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
-	.card {
+	.blue-grey {
 		flex-basis: 30%;
+		position: relative;
+	}
+	.card-action {
+		display: none;
+
 	}
 
 
+
+/*Portfolio*/
+	.main__portfolio {
+		background: #f8f8f8;
+		margin-top: 100px;
+	}
+
 	.main__portfolio h3 {
+		padding-top: 50px;
 		text-align: center;
 	}
 
 	.main__portfolio__gallery {
+		margin: 0 auto;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-bottom: 70px;
 	}
+
+	.main__portfolio__gallery .card {
+		flex-basis: 30%;
+
+	}
+
+
+	/*Contacts*/
+	.main__contacts {
+
+	}
+
+	.main__contacts h3 {
+		padding-top: 60px;
+		text-align: center;
+	}
+
+	.main__contacts__content {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 100%;
+	}
+
+		.main__contacts__right {
+			text-align: right;
+			flex-basis: 45%;
+
+		}
+
+			.contacts__img {
+				width: 100%;
+				border-radius: 5px;
+				box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+			}
+
+			.main__contacts__right p {
+				text-align: justify;
+
+			}
+
+
+
+		.main__contacts__left {
+			flex-basis: 45%;
+			display: flex;
+			flex-direction: row;
+		}
+
+			.form__item {
+				color: #000;
+				background-color: red;
+			}
+			
+			.form__button {
+
+			}
+
+/*		.main__contacts__right h4 {
+			margin-top: 0px;
+		
+		}*/
+
+
+
+
+
+
+
+
+/*.container {
+	width: 75%;
+}*/
+
+
+
 
 @media screen and (max-width: 768px) {
 	
+	.main__portfolio__gallery {
+		/*flex-direction: column;*/
+		display: block;
+
+
+	}
+	.main__portfolio__card {
+		margin-bottom: 2.4em;
+		/*padding-bottom: 100px;*/
+
+	}
+	.portfolio__card__content {
+		/*display: none;*/
+	}
+
+	/*Services */
+
+	.card-content span {
+		text-align: center;
+	}
+
 	.main__services {
 		flex-direction: column;
 	}
 
+	/*Banenr*/
+
+	.main__banner h2 {
+		font-size: 2em;
+	}
+
 	header h4 {
 		text-align: center;
-		color: red;
+		
+		color: #555555;
 	}
 }
