@@ -13,7 +13,7 @@
 
     <body>
 
-		<!-- Header  -->	
+		<!-- Header  -->
 		<header>
 			<div class="container">
 			<h4 class="header__title">Григорий Манов</h4>
@@ -33,19 +33,19 @@
 
 		<!-- Main -->
 		<main>
-			
+
 			<!-- Material Container -->
 			<div class="container">
-			
+
 				<!-- Banner Section -->
 
 				<section id="mainBanner" class="main__banner">
-					
+
 					<h2>Качественная верстка сайтов</h2>
 					<hr width="50px">
 
 				</section>
-				
+
 				<!-- Services Section -->
 
 				<section class="main__services">
@@ -61,7 +61,7 @@
 					          <a href="#">This is a link</a>
 					        </div>
 			      		</div>
-					
+
 						<div class="card_service card blue-grey darken-1">
 					        <div class="card-content white-text">
 					          <span class="card-title">Верстка сайтов</span>
@@ -72,7 +72,7 @@
 					          <a href="#">This is a link</a>
 					        </div>
 			      	    </div>
-					
+
 						<div class="card_service card blue-grey darken-1">
 					        <div class="card-content white-text">
 					          <span class="card-title">Установка на CMS</span>
@@ -91,9 +91,9 @@
 
 			<!-- End of Service Section -->
 
-				
+
 			<section class="main__portfolio">
-					
+
 			<!-- Container -->
 			<div class="container">
 
@@ -118,7 +118,7 @@
 					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
 						</div>
 					</div>
-					
+
 					<div class="main__portfolio__card card">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator" src="./img/portfolio/image.jpg">
@@ -132,7 +132,7 @@
 					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
 						</div>
 					</div>
-					
+
 					<div class="main__portfolio__card card">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator" src="./img/portfolio/image.jpg">
@@ -163,32 +163,35 @@
 
 
 		<!-- Main Contacts Content -->
-		
+
 		<div class="main__contacts__content">
 
 		<!-- Left Side -->
 		<div class="main__contacts__left">
-			
+
 			<!-- Form -->
 			<form action="index.html" method="post" class="main__contacts__form" id="contactForm">
 				<!-- <div class="form__left"> -->
-				
-					<input placeholder="Как Вас Зовут?" type="text" id="inputName" class="form__item reg__color alert__color">
-					<input placeholder="Телефон" type="number" id="inputPhone" class=" form__item reg__color">
-					<input placeholder="E-mail" type="email" id="inputEmail" class="form__item reg__color">
+
+					<input placeholder="Как Вас Зовут?" type="text" id="inputName" class="form__item">
+					<input placeholder="Телефон" type="number" id="inputPhone" class=" form__item">
+					<input placeholder="E-mail" type="email" id="inputEmail" class="form__item">
 
 				<!-- </div> -->
 
 				<!-- <div class="form__right"> -->
-					
-					<textarea placeholder="Текст Сообщения" name="" id="inputText" cols="30" rows="10" class="form__item reg__color materialize-textarea"></textarea>
-					<button class="btn-large waves-effect waves-light form__button" id="formButton">Отправить<i class="material-icons right">send</i></button>
-				<!-- </div> -->
+
+					<textarea placeholder="Текст Сообщения" name="" id="inputText" cols="30" rows="10" class="form__item materialize-textarea"></textarea>
+          <!-- <div> -->
+          <button class="btn-large waves-effect waves-light form__button" id="sendButton">Отправить<i class="material-icons right">send</i></button>
+          <span id="alertMessage" class="alertMessage">Заполните обязательные поля</span>
+          <!-- </div> -->
+      	<!-- </div> -->
 			</form>
-		
+
 		</div>
 		<!-- End of Contacts Left -->
-		
+
 		<!-- Contacts Right -->
 
 		<div class="main__contacts__right">
@@ -199,22 +202,22 @@
 
 			<p>Уважаю чужие время и деньги, стремлюсь к максимальной эффективности. Рассчитываю на долговременное и взаимовыгодное сотрудничество с большим объемом работ. Спасибо за проявленный интерес!</p>
 
-		
-		</div>		
+
+		</div>
 		<!-- End of Container	 -->
 		</section>
-		
+
 		<!-- End of Contacts Section -->
-	
+
 		</main>
 		<!-- End of Main -->
-	
-			
+
+
 
 
 		<!-- Footer -->
-	
-			
+
+
 		<footer class="page-footer brown darken-1">
           <div class="social_container container">
                 <h5 class="footer__title white-text">Связаться со мной</h5>
@@ -223,7 +226,7 @@
 					<a href=""><li class="contacts__social__item"><i class="fab fa-whatsapp-square"></i></li></a>
 					<a href=""><li class="contacts__social__item"><i class="fab fa-telegram"></i></li></a>
 				</ul>
- 
+
           </div>
           <div class="footer-copyright">
             <div class="container">
@@ -234,9 +237,8 @@
         </footer>
 
 
-
+      <script src="./js/main.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-   
+
     </body>
   </html>
-        

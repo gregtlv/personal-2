@@ -39,7 +39,7 @@ hr {
 		.header__nav__item {
 			margin: 0 1em 0 1em;
 			text-decoration-color: #6d4c41;
-			
+
 		}
 
 		.header__nav__item:hover {
@@ -79,7 +79,7 @@ hr {
 	}
 
 	.card_service:hover {
-		animation: scaleAnimation 1s 1; 
+		animation: scaleAnimation 1s 1;
 	}
 
 
@@ -150,35 +150,47 @@ hr {
 			display: flex;
 			flex-direction: row;
 		}
-			
+
+      input, textarea {
+        transition: all 0.5s;
+
+      }
 			.form__item {
 				padding-bottom: 25px;
+
 			}
 
 			.form__item::placeholder {
-				font-size: 1.2em;
-				color: #555555;
+				/* font-size: 1.2em; */
+				color: #555555;;
 			}
 			.form__item::-moz-placeholder {
-				font-size: 1.2em;
+				/* font-size: 1.2em; */
 				color: #555555;
-			}		
+			}
 
-			
+      .alertMessage {
+        transition: all 0.5s;
+        opacity: 0;
+      }
+
+
 			.form__button {
+        transition: all 0.5s;
 				margin-top: 20px;
+        margin-bottom: 0px;
 				/*height: 3em;*/
 				font-size: 1.3em;
 
 			}
-			
 
-/*Footer*/	
+
+/*Footer*/
 
 	footer {
 		margin-top: 5em;
 	}
-	
+
 	.contacts__social__icons {
 		display: flex;
 		flex-direction: row;
@@ -189,7 +201,7 @@ hr {
 	.contacts__social__item {
 		font-size: 2.3em;
 		margin: 0 20px 0 20px;
-}			
+}
 	.contacts__social__icons a {
 		transition: all 0.5s;
 		color: inherit;
@@ -206,8 +218,8 @@ hr {
 
 
 @media screen and (max-width: 768px) {
-	
-	
+
+
 	.contacts__social__icons {
 		justify-content: center;
 
@@ -219,7 +231,7 @@ hr {
 	.main__contacts__content {
 		flex-direction: column;
 		align-items: center;
-		
+
 	}
 
 		.main__contacts__left {
@@ -268,7 +280,7 @@ hr {
 	}
 
 	header h4 {
-		text-align: center;		
+		text-align: center;
 		color: #555555;
 	}
 }
