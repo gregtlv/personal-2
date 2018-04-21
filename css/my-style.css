@@ -356,6 +356,10 @@ hr {
 		color: #555555;
 	}
 }
+
+}
+
+
 @media screen and (max-width: 480px) {
   .header__nav {
     flex-direction: column;
