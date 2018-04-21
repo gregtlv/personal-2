@@ -14,7 +14,7 @@
 
 
  /* Disable Arrows in Input */
- 
+
 input[type='number'] { -moz-appearance:textfield }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button { -webkit-appearance: none; }
@@ -44,6 +44,10 @@ hr {
 		justify-content: center;
 
 	}
+    .toggle__button {
+      font-size: 2em;
+      display: none;
+    }
 
 		.header__nav__item {
 			margin: 0 1em 0 1em;
@@ -318,4 +322,27 @@ hr {
 		text-align: center;
 		color: #555555;
 	}
+}
+@media screen and (max-width: 480px) {
+  .header__nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .header__nav a {
+    display: none;
+    background-color: #6d4c41;
+    text-align: right;
+  }
+
+  .toggle__container {
+    width: 90%;
+    text-align: right;
+  }
+  .toggle__button {
+    display: block;
+  }
+  .toggle__container:hover .header__nav a {
+    display: block;
+  }
 }
