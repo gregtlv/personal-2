@@ -19,6 +19,7 @@ input[type='number'] { -moz-appearance:textfield }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button { -webkit-appearance: none; }
 
+
 li {
 	list-style: none;
 }
@@ -194,6 +195,11 @@ hr {
 
 			}
 
+      input:focus::placeholder,
+      textarea:focus::placeholder {
+        background-color: #f8f8f8;
+      }
+
 			.form__item::placeholder {
 				/* font-size: 1.2em; */
 				color: #555555;;
@@ -247,7 +253,7 @@ hr {
 	}
 
   .contacts__social__icons a:last-child::after {
-    position: absolute; 
+    position: absolute;
     opacity: 0;
     content: 'In Russia use proxy for this link';
 
