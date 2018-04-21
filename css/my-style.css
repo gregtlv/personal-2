@@ -37,16 +37,26 @@ hr {
 /*Navigation*/
 
 	.header__nav {
-
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: center;
 
 	}
+  .header__nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    z-index: 1;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.14),0 0px 1px 0x rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+
+  }
     .toggle__button {
       font-size: 2em;
       display: none;
+      color: #f8f8f8;
+      border: none;
+      cursor: pointer;
     }
 
 		.header__nav__item {
@@ -231,10 +241,26 @@ hr {
 		color: inherit;
 	}
 
-	.contacts__social__item:hover {
+	.contacts__social__icons a:hover {
 		transition: all 0.5s;
 		color: #ff6f00;
 	}
+
+  .contacts__social__icons a:last-child::after {
+    position: absolute; 
+    opacity: 0;
+    content: 'In Russia use proxy for this link';
+
+  }
+
+  .contacts__social__icons a:hover:last-child::after {
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 1s;
+    content: 'In Russia use proxy for this link';
+  }
+
 	.footer__title {
 		display: none;
 
@@ -327,13 +353,24 @@ hr {
   .header__nav {
     flex-direction: column;
     flex-wrap: nowrap;
+    position: relative;
   }
 
-  .header__nav a {
+  .header__nav__list {
     display: none;
-    background-color: #6d4c41;
-    text-align: right;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 56px;
+    background: #6d4c41;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.0),0 0px 0px 0 rgba(0,0,0,0.2);
   }
+    .header__nav__item {
+        text-decoration: none;
+    }
+    .header__nav__item:hover {
+      text-decoration: none;
+    }
 
   .toggle__container {
     width: 90%;
@@ -342,7 +379,5 @@ hr {
   .toggle__button {
     display: block;
   }
-  .toggle__container:hover .header__nav a {
-    display: block;
-  }
+
 }

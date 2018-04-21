@@ -1,21 +1,13 @@
 // Greg
 
-toggleButton.onclick = function expandMenu() {
-  var headerNav = document.getElementById('headerNav');
-
-  let headerNavClass = headerNav.classList;
-
-  // console.log(headerNavClass);
-
-  if (headerNav.className === "header-top__nav") {
-      headerNav.className += " responsive";
-  } else {
-    headerNavClass.remove("responsive");
-  }
-
-  // console.log(headerNavClass);
-
-}
+toggleButton.onclick = function menuHide() {
+	    var x = document.getElementById("navList");
+	    if (x.style.display === "none" || x.style.display === "") {
+	        x.style.display = "flex";
+	    } else {
+	        x.style.display = "none";
+	    }
+	}
 
 
 
@@ -32,12 +24,12 @@ sendButton.onclick = function sendForm(event) { //event важная вещь д
 
 
 
-	let userName_Class = userName.classList;
-	let userNumber_Class = userNumber.classList;
-	let userMail_Class = userMail.classList;
-	let userText_Class = userText.classList;
+	var userName_Class = userName.classList;
+	var userNumber_Class = userNumber.classList;
+	var userMail_Class = userMail.classList;
+	var userText_Class = userText.classList;
 
-	let alertMessage_Class = alertMessage.classList;
+	var alertMessage_Class = alertMessage.classList;
 
   // User Name
 
